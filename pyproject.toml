@@ -74,3 +74,6 @@ example-filter = "example_filter:ExampleFilter"
 
 [tool.hatch.envs.default.scripts]
 test = "pygmentize -l example-lang -f example-format -F example-filter -O style=example-style test.exmpl"
+
+[tool.hatch.build.targets.wheel]
+packages = ["lexer", "styles"]
